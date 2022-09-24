@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E3CEB9;
+
+}
+.container{
+    border: 3px solid #229C87;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 700px;
+    height: 700px;
+
+
+}
+/*width: 39.6875px; height: 39.6875px;*/
+/*#EADBCB #E3CEB9*/
+.box{
+    border: 2px ridge #229C87;
+    border-radius: 5px;
+    min-width: 39.6875px;
+    min-height: 39.6875px;
+}
+.hover{
+    background: aqua;
+}
