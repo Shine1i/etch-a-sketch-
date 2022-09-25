@@ -1,5 +1,9 @@
 let container = document.querySelector('.container');
 let btn = document.getElementById('gridBtn');
+let resetBtn = document.getElementById('resetBtn');
+let rainbowBtn = document.getElementById("rainbowBtn");
+rainbowBtn.addEventListener('click', rainbowColor)
+resetBtn.addEventListener('click', reset)
 btn.addEventListener('click',createGrid);
 
 function createGrid(){
@@ -25,4 +29,22 @@ function createGrid(){
         });
     }
     //---hover end---
+}
+
+function reset(){
+        let boxes = document.getElementsByClassName('box')
+        for (let a = 0; a<boxes.length; a++){
+            boxes[a].classList.remove('hover');
+            boxes[a].style.backgroundColor = "#E3CEB9";
+        }
+}
+
+function rainbowColor(){
+    let boxes = document.getElementsByClassName('box')
+    for (let a = 0; a<boxes.length; a++){
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
+        boxes[a].addEventListener('mouseover', () =>{
+            boxes[a].style.backgroundColor = "#" + randomColor;
+        });
+    }
 }
