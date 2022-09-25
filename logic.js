@@ -9,7 +9,7 @@ for (let i = 0; i < hover.length; i++){
     });
 }
 
-
+w
 function mouseOver(i){
     hover[i].classList.add('hover');
 }
