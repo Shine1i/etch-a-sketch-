@@ -15,9 +15,8 @@ function createGrid(){
             content.classList.add('box')
             container.appendChild(content);
         }
-    }else{
-        let usrChoice = parseInt(prompt("Choose between 1-100 please: "));
     }
+
 
     //---hover start---
     let boxes = document.getElementsByClassName('box')
@@ -25,7 +24,7 @@ function createGrid(){
         boxes[a].style.height = 700/usrChoice+"px";
         boxes[a].style.width = 700/usrChoice+"px";
         boxes[a].addEventListener('mouseover', ()=>{
-            boxes[a].classList.add('hover');
+            boxes[a].style.backgroundColor = "#00FFFFFF";
         });
     }
     //---hover end---

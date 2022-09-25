@@ -16,12 +16,13 @@ body {
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 2px;
+    margin-top: 10px;
     font-size: xxx-large;
 }
 
 .container {
-    border: 3px solid #229C87;
+    border: 10px solid indianred;
     border-radius: 0.2rem;
     display: flex;
     flex-wrap: wrap;
@@ -38,6 +39,7 @@ h1 {
 }
 
 button {
+
     border-radius: 10px;
     font-weight: bold;
     font-size: 35px;
