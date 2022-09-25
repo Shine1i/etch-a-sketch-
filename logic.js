@@ -5,7 +5,7 @@ for (let i = 0; i<256; i++){
 let hover = document.getElementsByClassName('box');
 for (let i = 0; i < hover.length; i++){
     hover[i].addEventListener('mouseover', () =>{
-      mouseOver(i)
+        mouseOver(i)
     });
 }
 
